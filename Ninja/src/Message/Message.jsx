@@ -1,5 +1,5 @@
 import styled from "styled-components";
-export default function Message({ToppingName}){
+export default function Message({message}){
     const StyledMessage = styled.h3`
     min-width: 100px;
     font-size: 18px;
@@ -10,7 +10,7 @@ export default function Message({ToppingName}){
   
   return (
    
-    <StyledMessage>{ToppingName} Already Selected</StyledMessage>
+    <StyledMessage>{message} </StyledMessage>
   )
   
 }

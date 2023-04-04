@@ -49,25 +49,19 @@ export default function Card({ turtlesProp, countT, top, turtles }) {
 
             toppings.push({ name, img })
             setCount(count => count + 1);
-            
+
         }
         else if (findTopping) {
-//   return (
-//     <div key={name}>
-//     <Message ToppingName={name} />
-//     </div>
-//   );
-setMessage(`${name} is already selected`);
-           // alert("Already Selected");
-        }
-        else {
 
-            alert("Maximum toppings reached")
+            setMessage(`${name} is already selected`);
+
+        }
+        else if(toppings.length ==5){
             setMessage('Maximum toppings reached');
         }
         setTimeout(() => {
             setMessage("");
-        }, 2000);
+        }, 3000);
 
     };
 
@@ -98,19 +92,19 @@ setMessage(`${name} is already selected`);
                 {renderTurtleCards()}
             </div>
             <div>
-       
 
-            <h3>Selected Toppings:</h3>
-                 { toppings.map((top) => (
-                        <center>
-                            <br/>
-                            <div style={{ display: "flex", flexDirecton: "row",position:"stickey"}} className="div2">
-                                <pre>{top.name}</pre>
-                                <StyledImage src={top.img} width={"100"} height={"100"} ></StyledImage>
-                            </div>
-                        </center>
-                    ))} 
-                    {message && <Message message={message} /> }
+
+                <h3>Selected Toppings:</h3>
+                {toppings.map((top) => (
+                    <center>
+                        <br />
+                        <div style={{ display: "flex", flexDirecton: "row", position: "stickey" }} className="div2">
+                            <pre>{top.name}</pre>
+                            <StyledImage src={top.img} width={"100"} height={"100"} ></StyledImage>
+                        </div>
+                    </center>
+                ))}
+                {message && <Message message={message} />}
                 {/* <h1>{turtlesProp.name}</h1>
                 <img src={turtlesProp.img} style={{ width: "70%", height: "30%" }} />
                 <h3>Toppings</h3>
