@@ -10,7 +10,7 @@ export default function Message({message}){
   
   return (
    
-    <StyledMessage>{message} </StyledMessage>
+    <StyledMessage>{message}! </StyledMessage>
   )
   
 }
