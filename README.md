@@ -10,6 +10,7 @@ We want to create an interface that displays turtles cards and each
 card will have a different turtle and a button list of the
 toppings he likes to eat.
 example: <br/>
+<img src='https://user-images.githubusercontent.com/127497841/229877535-7490a1dd-ff57-48c8-9ea3-d66b0bd1f596.png'/>
 ![image](https://user-images.githubusercontent.com/127497841/229877535-7490a1dd-ff57-48c8-9ea3-d66b0bd1f596.png)
 
 When the user clicks on an topic it will be added to the
